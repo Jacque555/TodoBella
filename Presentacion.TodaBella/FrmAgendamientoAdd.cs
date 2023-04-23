@@ -12,19 +12,20 @@ using Manejadores.TodaBella;
 
 namespace Presentacion.TodaBella
 {
+  
     public partial class FrmAgendamientoAdd : Form
     {
-        ManejadorAgedamiento ma;
+        ManejadorAgendamiento ma;
         public FrmAgendamientoAdd()
         {
             InitializeComponent();
-            ma = new ManejadorAgedamiento();
-            ma.ExtraerTipos(cmbNombre);
+            ma = new ManejadorAgendamiento();
+            ma.ExtraerClinete(cmbCliente);
             if (FrmAgendamiento.agendamiento.IdCita > 0)
             {
-                cmbNombre.Text = FrmAgendamiento.agendamientoc;
-                txtHora.Text = FrmAgendamiento.agendamiento.Hora;
-                txtFecha.Text = FrmAgendamiento.agendamiento.Fecha;
+                cmbCliente.Text = FrmAgendamiento.agendamientoc;
+                TxtHora.Text = FrmAgendamiento.agendamiento.Hora;
+                TxtFecha.Text = FrmAgendamiento.agendamiento.Fecha;
                 cmbServicio.Text = FrmAgendamiento.agendamiento.Servicio;
             }
         }
@@ -37,9 +38,8 @@ namespace Presentacion.TodaBella
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             ma.Guardar(new Agendamiento(FrmAgendamiento.agendamiento.IdCita,
-                int.Parse(cmbNombre.SelectedValue.ToString()),
-                txtHora.Text,
-                txtFecha.Text,
+                int.Parse(cmbCliente.SelectedValue.ToString()),
+                TxtHora.Text, TxtFecha.Text,
                 cmbServicio.Text));
             Close();
         }

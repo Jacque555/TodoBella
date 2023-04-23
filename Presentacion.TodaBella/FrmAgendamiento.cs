@@ -14,7 +14,7 @@ namespace Presentacion.TodaBella
 {
     public partial class FrmAgendamiento : Form
     {
-        ManejadorAgedamiento ma;
+        ManejadorAgendamiento ma;
         public static Agendamiento
             agendamiento = new Agendamiento(0, 0, "", "", "");
         int fila = 0, col = 0;
@@ -22,7 +22,7 @@ namespace Presentacion.TodaBella
         public FrmAgendamiento()
         {
             InitializeComponent();
-            ma = new ManejadorAgedamiento();
+            ma = new ManejadorAgendamiento();
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
@@ -70,6 +70,11 @@ namespace Presentacion.TodaBella
         {
             fila = e.RowIndex;
             col = e.ColumnIndex;
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

@@ -38,7 +38,7 @@ namespace Manejadores.TodaBella
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.DataSource =
-                ac.Mostrar(filtro).Tables["fkidUsuario"];
+                ac.Mostrar(filtro).Tables["cliente"];
             tabla.Columns.Insert(3, g.Boton(
                 "Editar", System.Drawing.Color.Green));
             tabla.Columns.Insert(4, g.Boton(
