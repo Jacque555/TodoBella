@@ -1,0 +1,6 @@
+D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Entidades.TodaBella\bin\Debug\Entidades.TodaBella.dll
+D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Entidades.TodaBella\bin\Debug\Entidades.TodaBella.pdb
+D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Entidades.TodaBella\obj\Debug\Entidades.TodaBella.csproj.AssemblyReference.cache
+D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Entidades.TodaBella\obj\Debug\Entidades.TodaBella.csproj.CoreCompileInputs.cache
+D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Entidades.TodaBella\obj\Debug\Entidades.TodaBella.dll
+D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Entidades.TodaBella\obj\Debug\Entidades.TodaBella.pdb
