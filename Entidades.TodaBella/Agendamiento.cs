@@ -1,20 +1,26 @@
-﻿namespace Entidades.TodaBella
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entidades.TodaBella
 {
     public class Agendamiento
     {
-        public Agendamiento(int idCita, int fkidUsuario, string hora, string fecha, string servicio)
+        public Agendamiento(int idCita, string servicio, string hora, string fecha, int fkidUsuario)
         {
             IdCita = idCita;
-            FkidUsuario = fkidUsuario;
+            Servicio = servicio;
             Hora = hora;
             Fecha = fecha;
-            Servicio = servicio;
+            FkidUsuario = fkidUsuario;
         }
 
         public int IdCita { get; set; }
-        public int FkidUsuario { get; set; }
+        public string Servicio { get; set; }
         public string Hora { get; set; }
         public string Fecha { get; set; }
-        public string Servicio { get; set; }
+        public int FkidUsuario { get; set; }
     }
 }

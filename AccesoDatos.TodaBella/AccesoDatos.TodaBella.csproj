@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoAgendamiento.cs" />
+    <Compile Include="AccesoCitas.cs" />
     <Compile Include="AccesoCliente.cs" />
     <Compile Include="IEntidades.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -34,5 +34,43 @@ D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Presentacion.TodaBell
 D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmClienteAdd.resources
 D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.GenerateResource.cache
 D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.CopyComplete
-D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmAgendamiento.resources
-D:\Ingenieria de Software\Parcial 3\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmAgendamientoAdd.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Presentacion.TodaBella.exe.config
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Presentacion.TodaBella.exe
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Presentacion.TodaBella.pdb
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\AccesoDatos.TodaBella.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Entidades.TodaBella.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\itextsharp.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Manejadores.TodaBella.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\ConectarBd.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Crud.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\MySql.Data.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Google.Protobuf.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\ZstdNet.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\System.Memory.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\System.Buffers.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\AccesoDatos.TodaBella.pdb
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Entidades.TodaBella.pdb
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\Manejadores.TodaBella.pdb
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\itextsharp.xml
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\bin\Debug\MySql.Data.xml
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.AssemblyReference.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.SuggestedBindingRedirects.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.exe.config
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Interop.MsmMergeTypeLib.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.ResolveComReference.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmAgendamiento.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmAgendamientoAdd.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmCliente.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmClienteAdd.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.GenerateResource.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.CoreCompileInputs.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.csproj.CopyComplete
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.exe
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.pdb
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmCita.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.TodaBella\Presentacion.TodaBella\obj\Debug\Presentacion.TodaBella.FrmCitasAdd.resources

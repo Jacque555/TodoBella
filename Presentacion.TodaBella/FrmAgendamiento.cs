@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Manejadores.TodaBella;
 using Entidades.TodaBella;
+using Manejadores.TodaBella;
 
 namespace Presentacion.TodaBella
 {
@@ -16,18 +16,14 @@ namespace Presentacion.TodaBella
     {
         ManejadorAgendamiento ma;
         public static Agendamiento
-            agendamiento = new Agendamiento(0, 0, "", "", "");
+            agendamiento = new Agendamiento(0, "", "", "", 0);
         int fila = 0, col = 0;
         public static string agendamientoc = "";
         public FrmAgendamiento()
         {
             InitializeComponent();
             ma = new ManejadorAgendamiento();
-        }
 
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            Actualizar();
         }
         void Actualizar()
         {
@@ -38,13 +34,14 @@ namespace Presentacion.TodaBella
         {
             agendamiento.IdCita = int.Parse(dtgAgendamiento.Rows[fila].
                 Cells[0].Value.ToString());
-            agendamientoc = dtgAgendamiento.Rows[fila].Cells[1].Value.ToString();
+            
             agendamiento.Hora = dtgAgendamiento.Rows[fila].
-                Cells[2].Value.ToString();
+                Cells[1].Value.ToString();
             agendamiento.Fecha = dtgAgendamiento.Rows[fila].
-                Cells[3].Value.ToString();
+                Cells[2].Value.ToString();
             agendamiento.Servicio = dtgAgendamiento.Rows[fila].
-                Cells[4].Value.ToString();
+                Cells[3].Value.ToString();
+            agendamientoc = dtgAgendamiento.Rows[fila].Cells[4].Value.ToString();
             switch (col)
             {
                 case 5:
@@ -72,16 +69,16 @@ namespace Presentacion.TodaBella
             col = e.ColumnIndex;
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             agendamiento.IdCita = -1;
             FrmAgendamientoAdd pa = new FrmAgendamientoAdd();
             pa.ShowDialog();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            Actualizar();
         }
     }
 }

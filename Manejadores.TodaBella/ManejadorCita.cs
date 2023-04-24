@@ -4,25 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Crud;
-using Entidades.TodaBella;
 using AccesoDatos.TodaBella;
-
+using Crud;
 namespace Manejadores.TodaBella
 {
-    public class ManejadorCliente : IManejador
+    public class ManejadorCita : IManejador
     {
+        AccesoCitas aa = new AccesoCitas();
         AccesoCliente ac = new AccesoCliente();
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
             DialogResult rs = MessageBox.Show(
                 string.Format("¿Está seguro de borrar {0}",
-                Entidad.IdUsuario),
+                Entidad.IdFolio),
                 "!Atención", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
             if (rs == DialogResult.Yes)
-                ac.Borrar(Entidad);
+                aa.Borrar(Entidad);
         }
 
         public void Exportar(DataGridView tabla)
@@ -32,8 +31,8 @@ namespace Manejadores.TodaBella
 
         public void Guardar(dynamic Entidad)
         {
-            ac.Guardar(Entidad);
-            g.Mensaje("Registro de cliente guardado", "¡ATENCIÓN!",
+            aa.Guardar(Entidad);
+            g.Mensaje("Pago realizado", "¡ATENCIÓN!",
                 MessageBoxIcon.Information);
         }
 
@@ -42,31 +41,19 @@ namespace Manejadores.TodaBella
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.DataSource =
-                ac.Mostrar(filtro).Tables["nombre"];
-            tabla.Columns.Insert(3, g.Boton(
-                "Editar", System.Drawing.Color.Green));
+                aa.Mostrar(filtro).Tables["tipoPago"];
             tabla.Columns.Insert(4, g.Boton(
+                "Editar", System.Drawing.Color.Green));
+            tabla.Columns.Insert(5, g.Boton(
                 "Borrar", System.Drawing.Color.Red));
             tabla.Columns[0].Visible = false;
             tabla.AutoResizeColumns();
         }
-        public void ExtraerTipos(ComboBox caja)
+        public void ExtraerCliente(ComboBox caja)
         {
-            caja.DataSource = ac.Mostrar("").Tables["cliente"];
+            caja.DataSource = ac.Mostrar("").Tables["nombre"];
             caja.DisplayMember = "nombre";
             caja.ValueMember = "idUsuario";
-        }
-        public Tuple<bool, string> ValidarCliente(Cliente cliente)
-        {
-            bool error = true;
-            string cadenaErrores = "";
-            if (cliente.Telefono == "")
-            {
-                cadenaErrores = cadenaErrores + "-Campo Telefono no puede ser vacio\n";
-                error = false;
-            }
-            var valida = new Tuple<bool, string>(error, cadenaErrores);
-            return valida;
         }
     }
 }

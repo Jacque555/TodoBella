@@ -64,6 +64,18 @@
     <Compile Include="FrmAgendamientoAdd.Designer.cs">
       <DependentUpon>FrmAgendamientoAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCita.Designer.cs">
+      <DependentUpon>FrmCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCitasAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasAdd.Designer.cs">
+      <DependentUpon>FrmCitasAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgendamientoAdd.resx">
       <DependentUpon>FrmAgendamientoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCita.resx">
+      <DependentUpon>FrmCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasAdd.resx">
+      <DependentUpon>FrmCitasAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCliente.resx">
       <DependentUpon>FrmCliente.cs</DependentUpon>

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManejadorAgendamiento.cs" />
+    <Compile Include="ManejadorCita.cs" />
     <Compile Include="ManejadorCliente.cs" />
     <Compile Include="IManejador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

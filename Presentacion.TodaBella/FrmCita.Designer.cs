@@ -1,6 +1,6 @@
 ﻿namespace Presentacion.TodaBella
 {
-    partial class FrmAgendamiento
+    partial class FrmCita
     {
         /// <summary>
         /// Required designer variable.
@@ -34,9 +34,9 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgAgendamiento = new System.Windows.Forms.DataGridView();
+            this.dtgCita = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAgendamiento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCita)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -44,11 +44,11 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(200)))), ((int)(((byte)(197)))));
             this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(75, 52);
+            this.panel1.Location = new System.Drawing.Point(122, 98);
             this.panel1.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(883, 126);
-            this.panel1.TabIndex = 24;
+            this.panel1.TabIndex = 29;
             // 
             // btnRegresar
             // 
@@ -74,11 +74,11 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
-            this.btnAgregar.Location = new System.Drawing.Point(872, 192);
+            this.btnAgregar.Location = new System.Drawing.Point(919, 238);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(63, 51);
-            this.btnAgregar.TabIndex = 23;
+            this.btnAgregar.TabIndex = 28;
             this.btnAgregar.Text = "+";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -86,55 +86,55 @@
             // txtBuscar
             // 
             this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
-            this.txtBuscar.Location = new System.Drawing.Point(279, 196);
+            this.txtBuscar.Location = new System.Drawing.Point(326, 242);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(575, 22);
-            this.txtBuscar.TabIndex = 22;
+            this.txtBuscar.TabIndex = 27;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 204);
+            this.label1.Location = new System.Drawing.Point(140, 250);
             this.label1.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 16);
-            this.label1.TabIndex = 21;
+            this.label1.TabIndex = 26;
             this.label1.Text = "Alojamiento:";
             // 
-            // dtgAgendamiento
+            // dtgCita
             // 
-            this.dtgAgendamiento.AllowUserToAddRows = false;
-            this.dtgAgendamiento.AllowUserToDeleteRows = false;
-            this.dtgAgendamiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
-            this.dtgAgendamiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgAgendamiento.Location = new System.Drawing.Point(86, 253);
-            this.dtgAgendamiento.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.dtgAgendamiento.Name = "dtgAgendamiento";
-            this.dtgAgendamiento.ReadOnly = true;
-            this.dtgAgendamiento.RowHeadersWidth = 51;
-            this.dtgAgendamiento.RowTemplate.Height = 24;
-            this.dtgAgendamiento.Size = new System.Drawing.Size(849, 216);
-            this.dtgAgendamiento.TabIndex = 20;
-            this.dtgAgendamiento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgAgendamiento_CellClick);
-            this.dtgAgendamiento.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgAgendamiento_CellEnter);
+            this.dtgCita.AllowUserToAddRows = false;
+            this.dtgCita.AllowUserToDeleteRows = false;
+            this.dtgCita.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
+            this.dtgCita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCita.Location = new System.Drawing.Point(133, 299);
+            this.dtgCita.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.dtgCita.Name = "dtgCita";
+            this.dtgCita.ReadOnly = true;
+            this.dtgCita.RowHeadersWidth = 51;
+            this.dtgCita.RowTemplate.Height = 24;
+            this.dtgCita.Size = new System.Drawing.Size(849, 216);
+            this.dtgCita.TabIndex = 25;
+            this.dtgCita.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCita_CellClick);
+            this.dtgCita.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCita_CellEnter);
             // 
-            // FrmAgendamiento
+            // FrmCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 521);
+            this.ClientSize = new System.Drawing.Size(1126, 612);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgAgendamiento);
-            this.Name = "FrmAgendamiento";
-            this.Text = "FrmAgendamiento";
+            this.Controls.Add(this.dtgCita);
+            this.Name = "FrmCita";
+            this.Text = "FrmCita";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAgendamiento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCita)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +148,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgAgendamiento;
+        private System.Windows.Forms.DataGridView dtgCita;
     }
 }
