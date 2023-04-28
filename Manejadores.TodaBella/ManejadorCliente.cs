@@ -43,9 +43,9 @@ namespace Manejadores.TodaBella
             tabla.RowTemplate.Height = 30;
             tabla.DataSource =
                 ac.Mostrar(filtro).Tables["nombre"];
-            tabla.Columns.Insert(3, g.Boton(
+            tabla.Columns.Insert(5, g.Boton(
                 "Editar", System.Drawing.Color.Green));
-            tabla.Columns.Insert(4, g.Boton(
+            tabla.Columns.Insert(6, g.Boton(
                 "Borrar", System.Drawing.Color.Red));
             tabla.Columns[0].Visible = false;
             tabla.AutoResizeColumns();

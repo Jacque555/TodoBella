@@ -16,5 +16,29 @@ namespace Presentacion.TodaBella
         {
             InitializeComponent();
         }
+
+        private void lblRegistro_DoubleClick(object sender, EventArgs e)
+        {
+            FrmClienteAdd fca= new FrmClienteAdd();
+            fca.Show();
+        }
+
+        private void lblCliente_DoubleClick(object sender, EventArgs e)
+        {
+            FrmCliente fc = new FrmCliente();
+            fc.Show();
+        }
+
+        private void lblCitas_DoubleClick(object sender, EventArgs e)
+        {
+            FrmAgendamiento fa = new FrmAgendamiento();
+            fa.Show();
+        }
+
+        private void lblPago_DoubleClick(object sender, EventArgs e)
+        {
+            FrmCita pago = new FrmCita();
+            pago.Show();
+        }
     }
 }

@@ -30,17 +30,18 @@ namespace Presentacion.TodaBella
             }
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void lblMenu_Click(object sender, EventArgs e)
+        {
+            FrmMenu fm = new FrmMenu();
+            fm.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
             mc.Guardar(new Citas(FrmCita.cita.IdFolio,
                 int.Parse(cmbCliente.SelectedValue.ToString()),
                 int.Parse(TxtPago.Text),
                 cmbPago.Text));
-            Close();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
             Close();
         }
     }

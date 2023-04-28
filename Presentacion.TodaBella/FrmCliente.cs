@@ -21,7 +21,7 @@ namespace Presentacion.TodaBella
     {
         ManejadorCliente mc;
         public static Cliente 
-            cliente = new Cliente(0,"","");
+            cliente = new Cliente(0,"","","",0);
         int fila = 0, col = 0;
         public static string clientes = "";
 
@@ -56,9 +56,13 @@ namespace Presentacion.TodaBella
                 Cells[1].Value.ToString();
             cliente.Telefono = dtgCliente.Rows[fila].
                 Cells[2].Value.ToString();
+            cliente.Domicilio = dtgCliente.Rows[fila].
+                Cells[3].Value.ToString();
+            cliente.Edad = int.Parse(dtgCliente.Rows[fila].
+                Cells[4].Value.ToString());
             switch (col)
             {
-                case 3:
+                case 5:
                     {
                         FrmClienteAdd ho = new FrmClienteAdd();
                         ho.ShowDialog();
@@ -67,7 +71,7 @@ namespace Presentacion.TodaBella
                         Actualizar();
                     }
                     break;
-                case 4:
+                case 6:
                     {
                         mc.Borrar(cliente);
                         Actualizar();
@@ -82,7 +86,42 @@ namespace Presentacion.TodaBella
             col = e.ColumnIndex;
         }
 
-        private void btnPdf_Click(object sender, EventArgs e)
+        public void ExportarDatos(DataGridView datalistado)
+        {
+            Document documento = new Document();
+            PdfWriter.GetInstance(documento, new FileStream(@"D:\PDFtodabella\excelcliente.xls", FileMode.OpenOrCreate));
+
+
+            documento.Open();
+            Microsoft.Office.Interop.Excel.Application exportarexcel = new Microsoft.Office.Interop.Excel.Application();
+            exportarexcel.Application.Workbooks.Add(true);
+            int indicecolumna = 0;
+            foreach (DataGridViewColumn columna in datalistado.Columns)
+            {
+                indicecolumna++;
+                exportarexcel.Cells[1, indicecolumna] = columna.Name;
+            }
+            int indicefila = 0;
+            foreach (DataGridViewRow fila in datalistado.Rows)
+            {
+                indicefila++;
+                indicecolumna = 0;
+                foreach (DataGridViewColumn columna in datalistado.Columns)
+                {
+                    indicecolumna++;
+                    exportarexcel.Cells[indicefila + 1, indicecolumna] = fila.Cells[columna.Name].Value;
+                }
+            }
+            exportarexcel.Visible = true;
+            System.Diagnostics.Process.Start(@"D:\PDFtodabella\excelcliente.xls");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPDF_Click(object sender, EventArgs e)
         {
             Document documento = new Document(PageSize.A4);
             PdfWriter.GetInstance(documento, new FileStream(@"D:\PDFtodabella\pdftodabella.pdf", FileMode.OpenOrCreate));
@@ -108,7 +147,7 @@ namespace Presentacion.TodaBella
 
             documento.Add(Chunk.NEWLINE);
 
-            PdfPTable tablaTodaBella= new PdfPTable(2);
+            PdfPTable tablaTodaBella = new PdfPTable(2);
             tablaTodaBella.WidthPercentage = 100;
             PdfPCell nombre = new PdfPCell(new Phrase("Nombre"));
             nombre.BorderWidth = 0;
@@ -138,38 +177,15 @@ namespace Presentacion.TodaBella
             System.Diagnostics.Process.Start(@"D:\PDFtodabella\pdftodabella.pdf");
         }
 
-        private void btnExcel_Click(object sender, EventArgs e)
+        private void lblExcel_Click(object sender, EventArgs e)
         {
             ExportarDatos(dtgCliente);
         }
-        public void ExportarDatos(DataGridView datalistado)
+
+        private void lblMenu_Click(object sender, EventArgs e)
         {
-            Document documento = new Document();
-            PdfWriter.GetInstance(documento, new FileStream(@"D:\PDFtodabella\excelcliente.xls", FileMode.OpenOrCreate));
-
-
-            documento.Open();
-            Microsoft.Office.Interop.Excel.Application exportarexcel = new Microsoft.Office.Interop.Excel.Application();
-            exportarexcel.Application.Workbooks.Add(true);
-            int indicecolumna = 0;
-            foreach (DataGridViewColumn columna in datalistado.Columns)
-            {
-                indicecolumna++;
-                exportarexcel.Cells[1, indicecolumna] = columna.Name;
-            }
-            int indicefila = 0;
-            foreach (DataGridViewRow fila in datalistado.Rows)
-            {
-                indicefila++;
-                indicecolumna = 0;
-                foreach (DataGridViewColumn columna in datalistado.Columns)
-                {
-                    indicecolumna++;
-                    exportarexcel.Cells[indicefila + 1, indicecolumna] = fila.Cells[columna.Name].Value;
-                }
-            }
-            exportarexcel.Visible = true;
-            System.Diagnostics.Process.Start(@"D:\PDFtodabella\excelcliente.xls");
+            FrmMenu mf = new FrmMenu();
+            mf.Show();
         }
 
         void Actualizar()

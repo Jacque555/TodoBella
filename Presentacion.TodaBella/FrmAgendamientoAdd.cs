@@ -30,12 +30,13 @@ namespace Presentacion.TodaBella
             }
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void lblMenu_Click(object sender, EventArgs e)
         {
-            Close();
+            FrmMenu fm = new FrmMenu();
+            fm.Show();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
             ma.Guardar(new Agendamiento(FrmAgendamiento.agendamiento.IdCita,
                 cmbServicio.Text,

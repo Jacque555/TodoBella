@@ -15,8 +15,8 @@ namespace AccesoDatos.TodaBella
         public void Guardar(dynamic Entidad)
         {
             b.Comando(string.Format("call p_insertarcliente(" +
-               "{0},'{1}','{2}')", Entidad.IdUsuario,
-               Entidad.Nombre, Entidad.Telefono));
+               "{0},'{1}','{2}','{3}',{4})", Entidad.IdUsuario,
+               Entidad.Nombre, Entidad.Telefono, Entidad.Domicilio, Entidad.Edad));
         }
 
         public DataSet Mostrar(string filtro)

@@ -24,6 +24,8 @@ namespace Presentacion.TodaBella
             {
                 txtNombre.Text = FrmCliente.cliente.Nombre;
                 txtTelefono.Text = FrmCliente.cliente.Telefono;
+                txtDomicilio.Text = FrmCliente.cliente.Domicilio;
+                txtEdad.Text = FrmCliente.cliente.Edad.ToString();
             }
         }
 
@@ -33,17 +35,25 @@ namespace Presentacion.TodaBella
             Close();
         }
 
-        private void btnGuardar_Click_1(object sender, EventArgs e)
+
+        private void lblMenu_Click(object sender, EventArgs e)
+        {
+            FrmMenu fm = new FrmMenu();
+            Close();
+            fm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
             Cliente h = new Cliente(FrmCliente.cliente.IdUsuario, txtNombre.Text,
-                     txtTelefono.Text);
+                     txtTelefono.Text, txtDomicilio.Text, int.Parse(txtEdad.Text));
 
             var valida = mc.ValidarCliente(h);
 
             if (valida.Item1)
             {
                 mc.Guardar(new Cliente(FrmCliente.cliente.IdUsuario, txtNombre.Text,
-                     txtTelefono.Text));
+                     txtTelefono.Text, txtDomicilio.Text, int.Parse(txtEdad.Text)));
             }
             else
             {

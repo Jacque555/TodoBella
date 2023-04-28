@@ -12,7 +12,7 @@ namespace Presentacion.TodaBella
         [STAThread]
         static void Main()
         {
-            Application.Run(new FrmCita());
+            Application.Run(new FrmAgendamiento());
         }
     }
 }

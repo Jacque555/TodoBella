@@ -29,145 +29,189 @@
         private void InitializeComponent()
         {
             this.TxtPago = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.cmbPago = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.cmbCliente = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblMenu = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtPago
             // 
-            this.TxtPago.Location = new System.Drawing.Point(538, 197);
+            this.TxtPago.BackColor = System.Drawing.Color.White;
+            this.TxtPago.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F);
+            this.TxtPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(102)))), ((int)(((byte)(118)))));
+            this.TxtPago.Location = new System.Drawing.Point(886, 425);
             this.TxtPago.Name = "TxtPago";
-            this.TxtPago.Size = new System.Drawing.Size(200, 22);
+            this.TxtPago.Size = new System.Drawing.Size(270, 43);
             this.TxtPago.TabIndex = 103;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(147, 378);
-            this.label3.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
-            this.label3.TabIndex = 101;
-            this.label3.Text = "Hotel:";
             // 
             // cmbPago
             // 
-            this.cmbPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
+            this.cmbPago.BackColor = System.Drawing.Color.White;
+            this.cmbPago.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F);
+            this.cmbPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(102)))), ((int)(((byte)(118)))));
             this.cmbPago.FormattingEnabled = true;
             this.cmbPago.Items.AddRange(new object[] {
-            "hshs",
-            "sjsj",
-            "sjsks"});
+            "Tarjeta",
+            "Efectivo"});
             this.cmbPago.Location = new System.Drawing.Point(149, 426);
             this.cmbPago.Margin = new System.Windows.Forms.Padding(5, 9, 5, 9);
             this.cmbPago.Name = "cmbPago";
-            this.cmbPago.Size = new System.Drawing.Size(664, 24);
+            this.cmbPago.Size = new System.Drawing.Size(608, 42);
             this.cmbPago.TabIndex = 100;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(545, 155);
-            this.label4.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 16);
-            this.label4.TabIndex = 99;
-            this.label4.Text = "Fecha salida:";
             // 
             // cmbCliente
             // 
-            this.cmbCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
+            this.cmbCliente.BackColor = System.Drawing.Color.White;
+            this.cmbCliente.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F);
+            this.cmbCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(102)))), ((int)(((byte)(118)))));
             this.cmbCliente.FormattingEnabled = true;
             this.cmbCliente.Location = new System.Drawing.Point(149, 311);
             this.cmbCliente.Margin = new System.Windows.Forms.Padding(5, 9, 5, 9);
             this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(664, 24);
+            this.cmbCliente.Size = new System.Drawing.Size(1007, 42);
             this.cmbCliente.TabIndex = 93;
             // 
-            // label7
+            // pictureBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(144, 264);
-            this.label7.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 16);
-            this.label7.TabIndex = 97;
-            this.label7.Text = "Participante:";
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(490, 500);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(11, 42, 11, 42);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(146, 51);
-            this.btnSalir.TabIndex = 95;
-            this.btnSalir.Text = "    Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(296, 500);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(11, 42, 11, 42);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(172, 51);
-            this.btnGuardar.TabIndex = 94;
-            this.btnGuardar.Text = "     Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(200)))), ((int)(((byte)(197)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(128, 43);
-            this.panel1.Margin = new System.Windows.Forms.Padding(11, 42, 11, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(699, 100);
-            this.panel1.TabIndex = 96;
+            this.pictureBox1.Image = global::Presentacion.TodaBella.Properties.Resources.Captura_de_pantalla_2023_04_24_195747;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1310, 807);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 104;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(186, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(102)))), ((int)(((byte)(118)))));
+            this.label1.Location = new System.Drawing.Point(591, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(454, 69);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ALOJAMIENTO";
+            this.label1.Size = new System.Drawing.Size(112, 42);
+            this.label1.TabIndex = 105;
+            this.label1.Text = "PAGO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(189)))), ((int)(((byte)(195)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(144, 236);
+            this.label2.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 35);
+            this.label2.TabIndex = 106;
+            this.label2.Text = "Cliente:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(189)))), ((int)(((byte)(195)))));
+            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(144, 382);
+            this.label5.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(197, 35);
+            this.label5.TabIndex = 107;
+            this.label5.Text = "Tipo de pago:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(189)))), ((int)(((byte)(195)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(880, 382);
+            this.label6.Margin = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(204, 35);
+            this.label6.TabIndex = 108;
+            this.label6.Text = "Total de pago:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(1021, 638);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 25);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "REGISTRAR";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
+            this.pictureBox3.Image = global::Presentacion.TodaBella.Properties.Resources.Captura_de_pantalla_2023_04_24_202719;
+            this.pictureBox3.Location = new System.Drawing.Point(1003, 623);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(156, 56);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 112;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblMenu
+            // 
+            this.lblMenu.AutoSize = true;
+            this.lblMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
+            this.lblMenu.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu.ForeColor = System.Drawing.Color.Black;
+            this.lblMenu.Location = new System.Drawing.Point(829, 638);
+            this.lblMenu.Name = "lblMenu";
+            this.lblMenu.Size = new System.Drawing.Size(73, 25);
+            this.lblMenu.TabIndex = 109;
+            this.lblMenu.Text = "MENÚ";
+            this.lblMenu.Click += new System.EventHandler(this.lblMenu_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(165)))), ((int)(((byte)(228)))));
+            this.pictureBox2.Image = global::Presentacion.TodaBella.Properties.Resources.Captura_de_pantalla_2023_04_24_202719;
+            this.pictureBox2.Location = new System.Drawing.Point(789, 623);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(156, 56);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 110;
+            this.pictureBox2.TabStop = false;
             // 
             // FrmCitasAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 594);
-            this.Controls.Add(this.TxtPago);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.ClientSize = new System.Drawing.Size(1306, 804);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.lblMenu);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtPago);
             this.Controls.Add(this.cmbPago);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbCliente);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCitasAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCitasAdd";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,14 +220,16 @@
         #endregion
 
         private System.Windows.Forms.TextBox TxtPago;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbPago;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbCliente;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
